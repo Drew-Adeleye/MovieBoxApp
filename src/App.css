@@ -20,7 +20,7 @@
   margin: 10px;
 }
 
-i {
+.card i {
   background-color: rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 0.5);
   padding: 10px;
@@ -33,7 +33,7 @@ i {
   font-size: 20px;
 }
 
-i.active {
+.card i.active {
   color: red;
 }
 
@@ -52,10 +52,11 @@ i.active {
   position: relative;
 }
 
-.input-wrapper img {
+.input-wrapper i {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 6px;
+  right: 10px;
+  color: white;
   /* background-color: white; */
 }
 
