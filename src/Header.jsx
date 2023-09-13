@@ -3,7 +3,6 @@ import imdbIcon from "./images/imdb.png";
 import Navbar from "./Navbar";
 
 function Header(props) {
-  // console.log(props);
   return (
     <header className="header-section">
       <div className="container">

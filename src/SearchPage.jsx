@@ -38,6 +38,20 @@ function SearchPage(props) {
     searchMovies();
   }, [props.searchInput]);
 
+  function toggleActive(event, id) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    searchResults.map((movie) => {
+      if (movie.id == id) {
+        event.target.classList.toggle("active");
+        return movie;
+      } else {
+        return movie;
+      }
+    });
+  }
+
   const movieElements = searchResults.map((movie) => (
     <MovieCard
       key={movie.id}
@@ -46,6 +60,7 @@ function SearchPage(props) {
       rating={movie.vote_average}
       source={movie.poster_path}
       id={movie.id}
+      toggleActive={(event) => toggleActive(event, movie.id)}
     />
   ));
 

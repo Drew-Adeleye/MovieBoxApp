@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./images/tv.png";
 import menuIcon from "./images/Menu.png";
+import movieIcon from "./images/movieicon.png";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
   return (
@@ -12,13 +14,18 @@ function Navbar(props) {
         </div>
       </div>
       <div className="col-md-5">
-        <input
-          type="text"
-          className="w-100"
-          placeholder="what do you want to watch?"
-          value={props.searchInput}
-          onChange={(event) => props.handleChange(event)}
-        />
+        <div className="input-wrapper">
+          <input
+            type="text"
+            className="w-100"
+            placeholder="what do you want to watch?"
+            value={props.searchInput}
+            onChange={(event) => props.handleChange(event)}
+          />
+          <Link to="/search">
+            <img src={movieIcon} alt="" />
+          </Link>
+        </div>
       </div>
       <div className="col-md-3 d-flex justify-content-end">
         <div className="auth">
