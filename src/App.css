@@ -1,0 +1,165 @@
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.iconWrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+i {
+  /* background-color: green; */
+  /* padding: 10px; */
+  /* border-radius: 50%; */
+  /* width: 50px; */
+  /* height: 50px; */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  margin: 10px;
+  font-size: 20px;
+}
+
+i.active {
+  color: red;
+}
+
+.header-section {
+  background-image: url(./images/Poster.png);
+  min-height: 600px;
+  background-size: cover;
+  color: white;
+}
+
+.header-section .row-2 {
+  /* margin-top: 100px; */
+}
+
+.header-section input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-indent: 5px;
+  color: white;
+}
+
+.header-section input::placeholder {
+  color: white;
+}
+
+.header-section input:active,
+.header-section input:focus {
+  outline: 1px solid white;
+}
+
+.brandname,
+.auth {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-section .row-2 h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.header-section .row-2 .desc {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.brandname h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.brandname p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.movie-rating .rating {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.card {
+  border-radius: 0px;
+  border: none !important;
+  transition: all ease-in-out 0.2s;
+  position: relative;
+}
+
+.card:hover {
+  /* background-color: green; */
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+.card .card-img-top {
+  border-radius: 0px;
+}
+
+.card .card-body {
+  padding: 0px;
+}
+
+.card [data-testid="movie-release-date"] {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 700;
+}
+
+.card [data-testid="movie-title"] {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.top-movies-section .movie-category h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.movie-info-section .brandname {
+  margin-bottom: 50px;
+}
+.movie-info-section .side-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-info-section .sidebar {
+  min-height: 100vh;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
+.movie-info-section .side-menu h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* .movie-info-section .sidebar-log-out {
+  margin-top: auto;
+  margin-bottom: 30px;
+} */
