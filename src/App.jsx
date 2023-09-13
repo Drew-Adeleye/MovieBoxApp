@@ -12,8 +12,6 @@ function App() {
 
   function handleChange(event) {
     setSearchInput(event.target.value);
-    const navigate = useNavigate();
-    navigate("/search");
   }
 
   // console.log(searchInput);
