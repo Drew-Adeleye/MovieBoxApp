@@ -21,11 +21,6 @@
 }
 
 i {
-  /* background-color: green; */
-  /* padding: 10px; */
-  /* border-radius: 50%; */
-  /* width: 50px; */
-  /* height: 50px; */
   background-color: rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 0.5);
   padding: 10px;
@@ -49,8 +44,19 @@ i.active {
   color: white;
 }
 
-.header-section .row-2 {
-  /* margin-top: 100px; */
+/* .header-section .row-2 {
+  margin-top: 100px;
+} */
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* background-color: white; */
 }
 
 .header-section input {
