@@ -11,10 +11,9 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
 
   function handleChange(event) {
-    setSearchInput(event.target.value);
+    setSearchInput(event.target.value); 
   }
 
-  // console.log(searchInput);
   // useeffect to perform the fetch request
   useEffect(() => {
     const apiKey = "1d01ba6333dcca2427e736451a846ae1";
@@ -56,7 +55,6 @@ function App() {
   set a class of active on the clicked element 
   return the curent movie in the loop (movie(i))
   */
-
   function toggleActive(event, id) {
     event.preventDefault();
     event.stopPropagation();
@@ -86,19 +84,6 @@ function App() {
 
   return (
     <>
-      {/* <Header handleChange={handleChange} searchInput={searchInput} />
-      <section className="top-movies-section">
-        <div className="container">
-          <div className="row py-5">
-            <div className="movie-category">
-              <h2>Top 10 Movies</h2>
-            </div>
-          </div>
-          <div className="row g-5">{movieElements}</div>
-        </div>
-      </section>
-      <MovieInfoPage />
-      <SearchPage handleChange={handleChange} searchInput={searchInput} /> */}
       <Routes>
         <Route
           path="/"
