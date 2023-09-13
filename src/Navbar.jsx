@@ -23,7 +23,7 @@ function Navbar(props) {
             onChange={(event) => props.handleChange(event)}
           />
           <Link to="/search">
-            <img src={movieIcon} alt="" />
+            <i className="fa-solid fa-magnifying-glass"></i>
           </Link>
         </div>
       </div>
