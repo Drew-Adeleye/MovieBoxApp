@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import MovieCard from "./MovieCard";
 import MovieInfoPage from "./MovieInfoPage";
-import SearchPage from "./searchPage";
+import SearchPage from "./SearchPage";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
 
   function handleChange(event) {
-    setSearchInput(event.target.value); 
+    setSearchInput(event.target.value);
   }
 
   // useeffect to perform the fetch request
@@ -78,7 +78,7 @@ function App() {
       rating={movie.vote_average}
       source={movie.poster_path}
       id={movie.id}
-      toggleActive={(event) => toggleActive(event, movie.id)} 
+      toggleActive={(event) => toggleActive(event, movie.id)}
     />
   ));
 
