@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Header from "./header";
+import Header from "./Header";
 import MovieCard from "./MovieCard";
 import MovieInfoPage from "./MovieInfoPage";
 import SearchPage from "./searchPage";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [topRatedMovies, setTopRatedMovies] = useState([]);
@@ -78,7 +78,7 @@ function App() {
       rating={movie.vote_average}
       source={movie.poster_path}
       id={movie.id}
-      toggleActive={(event) => toggleActive(event, movie.id)}
+      toggleActive={(event) => toggleActive(event, movie.id)} 
     />
   ));
 
