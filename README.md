@@ -22,3 +22,8 @@ Follow these steps to set up the MovieBoxApp locally:
 1. Clone the repository:
    ```shell
    git clone https://github.com/Drew-Adeleye/MovieBoxApp.git
+
+2. Navigate to the project directory::
+   ```shell
+   cd MovieBoxApp
+
